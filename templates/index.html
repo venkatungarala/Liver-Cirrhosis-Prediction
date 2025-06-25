@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liver Cirrhosis Prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 95%;
+      max-width: 500px;
+    }
+    h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+    }
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .hint {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      font-weight: bold;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    @media (max-width: 480px) {
+      h2 { font-size: 22px; }
+      input, select { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🩺 Liver Cirrhosis Prediction</h2>
+    <form action="/predict" method="POST">
+      
+      <!-- Age -->
+      <div class="form-group">
+        <label for="Age">Age</label>
+        <input type="number" name="Age" step="0.1" required>
+        <div class="hint">Enter your age in years (ex: 45)</div>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="Gender">Gender</label>
+        <select name="Gender" required>
+          <option value="" disabled selected>Select gender</option>
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select>
+        <div class="hint">Choose your gender</div>
+      </div>
+
+      <!-- BMI -->
+      <div class="form-group">
+        <label for="BMI">Body Mass Index (BMI)</label>
+        <input type="number" name="BMI" step="0.1" required>
+        <div class="hint">Enter your BMI (e.g. 22.5)</div>
+      </div>
+
+      <!-- Alcohol Consumption -->
+      <div class="form-group">
+        <label for="AlcoholConsumption">Alcohol Consumption</label>
+        <input type="number" name="AlcoholConsumption" step="0.1" required>
+        <div class="hint">How many alcohol units you consume per week (e.g. 3.5)</div>
+      </div>
+
+      <!-- Smoking -->
+      <div class="form-group">
+        <label for="Smoking">Do you smoke?</label>
+        <select name="Smoking" required>
+          <option value="" disabled selected>Select option</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <div class="hint">Choose 'Yes' if you are a smoker</div>
+      </div>
+
+      <!-- Genetic Risk -->
+      <div class="form-group">
+        <label for="GeneticRisk">Any family history of liver disease?</label>
+        <select name="GeneticRisk" required>
+          <option value="" disabled selected>Select option</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <div class="hint">Choose 'Yes' if liver problems run in your family</div>
+      </div>
+
+      <!-- Physical Activity -->
+      <div class="form-group">
+        <label for="PhysicalActivity">Do you exercise regularly?</label>
+        <select name="PhysicalActivity" required>
+          <option value="" disabled selected>Select option</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <div class="hint">Choose 'Yes' if you stay physically active</div>
+      </div>
+
+      <!-- Diabetes -->
+      <div class="form-group">
+        <label for="Diabetes">Do you have diabetes?</label>
+        <select name="Diabetes" required>
+          <option value="" disabled selected>Select option</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <div class="hint">Choose 'Yes' if you are diabetic</div>
+      </div>
+
+      <!-- Hypertension -->
+      <div class="form-group">
+        <label for="Hypertension">Do you have high blood pressure?</label>
+        <select name="Hypertension" required>
+          <option value="" disabled selected>Select option</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <div class="hint">Choose 'Yes' if you have high BP</div>
+      </div>
+
+      <!-- Liver Function Test -->
+      <div class="form-group">
+        <label for="LiverFunctionTest">Liver Function Test Result</label>
+        <input type="number" name="LiverFunctionTest" step="0.1" required>
+        <div class="hint">Enter your liver test score (e.g. 34.7)</div>
+      </div>
+
+      <button type="submit">Check Prediction</button>
+    </form>
+  </div>
+</body>
+</html>
