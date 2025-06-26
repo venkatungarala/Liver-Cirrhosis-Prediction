@@ -8,8 +8,11 @@ It is built using Flask for the backend and a Random Forest Classifier trained o
 ## Features
 
 1.Real-time liver disease prediction
+
 2.Clean and responsive HTML/CSS UI
+
 3.Input includes medical history & lifestyle habits
+
 4.Powered by a trained Random Forest model
 
 
@@ -19,6 +22,7 @@ It is built using Flask for the backend and a Random Forest Classifier trained o
 
 Check out the live demo here:  
 [Your GitHub Pages URL](https://liver-cirrhosis-prediction-1.onrender.com)
+if it is is not loading the website go back and reload link again or wait for some time to restart the link
 
 ---
 
