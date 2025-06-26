@@ -129,7 +129,7 @@ Run the Flask app using python app.py
 Venkat Ungarala
 B.Tech CSE Student
 Passionate about AI and Full-Stack Development
-GitHub: https://github.com/venkatasaiecommerce
+GitHub: https://github.com
 
 ---
  ## 📄 License
@@ -142,5 +142,4 @@ Feel free to open an issue or submit a pull request!
 ## Made with ❤️ using Python, Flask, and Machine Learning
 
 
-## License
 
