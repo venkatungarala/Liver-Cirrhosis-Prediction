@@ -107,13 +107,21 @@ joblib
 ---
 
 ## 📁 Project Structure
+
 📦 liver-cirrhosis-prediction/
+
 ├── training/               # Notebook for training the model
+
 ├── models/                 # Trained model and scaler (.pkl files)
+
 ├── templates/              # index.html (user form)
+
 ├── app.py                  # Flask backend logic
+
 ├── requirements.txt        # Required Python packages
+
 └── Procfile                # For Render deployment
+
 
 ---
 
@@ -131,9 +139,13 @@ Run the Flask app using python app.py
 
 ## 👨‍💻 Author
 Venkat Ungarala
+
 B.Tech CSE Student
+
 Passionate about AI and Full-Stack Development
+
 GitHub: https://github.com
+
 
 ---
  ## 📄 License
@@ -141,7 +153,9 @@ This project is open source and free to use.
 
 ## 💬 Feedback
 Found a bug or have suggestions to improve?
+
 Feel free to open an issue or submit a pull request!
+
 
 ## Made with ❤️ using Python, Flask, and Machine Learning
 
